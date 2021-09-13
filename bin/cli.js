@@ -5,22 +5,31 @@ const { stringify, parse } = require('../index.js');
 
 
 // -------------------- CLI ----------------------------------------------------------------------
-
-
 program
   .command('parse')
   .argument('<first>','integer argument')
   .description('Recibe un String como único argumento y retorna un número (Number) en caso que sea un número romano válido, en caso contrario arrojará un error especificando la causa.')
-  .action((first) => {
-    console.log(parse(first));
-  });
+  .action(async (first) => {
+    try {
+      const response =  parse(first)
+      console.log(response); 
+    } catch (error) {
+      console.log(error)
+    }
+  })
 
 program
   .command('stringify')
   .argument('[second]', 'integer argument')
   .description('Recibe un número (Number) y retorna un String con la representación del número recibido como número romano. En caso de que el número esté fuera de rango (1 <= num <= 3999).')
-  .action((second) => {
-    console.log(stringify(+second));
+  .action(async (second) => {
+    try {
+      const response =  stringify(+second)
+      console.log(response);
+    } catch (error) {
+      console.log(error)
+    }
+
   });
 
   program
@@ -33,11 +42,9 @@ program
     } if (options.version) {
       console.log(`
       Usage: roman-numerals [opttions] <command> [<input>]
-
       Commands:
         parse <input>      Parse a roman numeral string into an integer.
         stringify <input>  Takes an integer and converts it to a roman numeral.
-
       Options:
         -h,--help     Show this help.
         -v,--version  Show version number.
