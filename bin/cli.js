@@ -4,6 +4,7 @@ const { program } = require('commander');
 const { stringify, parse } = require('../index.js');
 
 const options = program.opts();
+
 // -------------------- CLI ----------------------------------------------------------------------
 program
   .command('parse')
