@@ -1,8 +1,9 @@
 # Números romanos
 
+
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Comando npm de instalación](#1-Comando-npm-de-instalación)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -11,28 +12,8 @@
 
 ***
 
-## 1. Preámbulo
-
-![Entrada a la sección LII del Coliseo, con los números aún visibles](https://upload.wikimedia.org/wikipedia/commons/6/6b/Colosseum-Entrance_LII.jpg)
-
-> La numeración romana es un sistema de numeración que se desarrolló en la
-> Antigua Roma y se utilizó en todo el Imperio romano, manteniéndose con
-> posterioridad a su desaparición y todavía utilizado en algunos ámbitos.
->
-> Este sistema emplea algunas letras mayúsculas como símbolos para representar
-> ciertos valores. Los números se escriben como combinaciones de letras. Por
-> ejemplo, el año 2020 se escribe como MMXX, donde cada M representa 1000
-> unidades y cada X representa 10 unidades más.
->
-> Está basado en la numeración etrusca, la cual, a diferencia de la numeración
-> decimal que está basada en un sistema posicional, se basa en un sistema
-> aditivo (cada signo representa un valor que se va sumando al anterior). La
-> numeración romana posteriormente evolucionó a un sistema sustractivo, en el
-> cual algunos signos en lugar de sumar, restan. Por ejemplo el 4 en la
-> numeración etrusca se representaba como IIII (1+1+1+1), mientras que en la
-> numeración romana moderna se representa como IV (1 restado a 5).
->
-> Fuente: [Numeración romana - Wikipedia](https://es.wikipedia.org/wiki/Numeraci%C3%B3n_romana)
+## 1. Comando npm de instalación
+		npm i nangebav/REG003-roman-numerals
 
 ## 2. Resumen del proyecto
 
